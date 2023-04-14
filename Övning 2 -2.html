@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="review.php" method="get">
+    
+    <h1>Creat a free account</h1>
+    <fieldset>
+        <legend>Account Details</legend>
+        <label>Email* <br>
+            <input type="email" name="email" size="30" maxlength="50" required></label>
+        <br>
+        <label>Password* <br>
+            <input type="password" name="password" size="30" maxlength="10" minlength="4" required></label>
+        <br>
+        <label>Repeat email* <br>
+            <input type="email" name="remail" size="30" maxlength="50" required></label>
+        <br>
+        <label>Repeat password* <br>
+            <input type="password" name="rpassword" size="30" maxlength="10" minlength="4" required></label>
+        <br>
+    </fieldset><br>
+   
+    <fieldset>
+        <legend>Personal Details</legend>
+
+        <label>Name* <br>
+            <input type="text" name="name" size="30"  minlength="6" maxlength="50" required></label>
+        <br>
+        <label>Phone* <br>
+            <input type="tel" name="phone" size="30"  minlength="6" maxlength="10" required></label>
+        <br>
+        <label>Street<br>
+            <input type="text" name="street" ></label>
+        <br>
+        <label>City* <br>
+            <input type="text" name="city" size="30" minlength="3" required></label>
+        <br>
+        <p>
+            <label for="country_name">Country*
+            <select name="country" id="country_name" required>
+                <option value="sweden">Sweden</option>
+                <option value="usa">USA</option>
+                <option value="britain">Britain</option>
+                <option value="russa">Russa</option>
+                <option value="france">France</option>
+                <option value="germany">Germany</option>
+            </select>
+        </p>
+        
+        <label>Website
+            <input type="url" name="website" size="50">
+            <input type="hidden" name="custId" value="3487"></label>
+        <br>
+
+        <p>Gender* 
+            <input type="radio" name="gender" id="female" value="f" required>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="male" value="m" required>
+            <label for="male">Male</label><br>
+        </p>
+        <p>
+            <label for="birthdate_day">Birthdate* <br>
+            <select name="day" id="birthdate_day" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="1">7</option>
+                <option value="2">8</option>
+                <option value="3">9</option>
+                <option value="4">10</option>
+                <option value="5">11</option>
+                <option value="6">12</option>
+                </select></label>
+
+            <label for="birthdate_month">
+            <select name="month" id="birthdate_month" required>
+                <option value="jan">January</option>
+                <option value="feb">Februay</option>
+                <option value="mar">March</option>
+                <option value="apr">April</option>
+                <option value="may">May</option>
+                <option value="jun">June</option>
+                <option value="jul">July</option>
+                </select></label>
+
+            <label for="mon_year">
+                <input type="month" name="mon" id="mon_year" required>
+            </label>
+        </p>
+       
+        <label>Children 
+            <input type="checkbox" name="subscribe"></label><br>
+
+    </fieldset><br>
+
+    <fieldset>
+       <legend>Terms and mailing</legend> 
+       <br>
+       <label>
+            <input type="checkbox" name="privacy"> I accept the<a href="https://www.w3schools.com/about/about_privacy.asp">  Privacy Policy</a></label><br>
+            <input type="checkbox" name="subscribe">I want to recieve personallized offers by your site</label><br>
+    </fieldset>
+    <br>
+
+    <input type="submit" value="Submit">
+</form>
+</body>
+
+</html>
